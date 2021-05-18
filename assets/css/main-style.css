@@ -71,10 +71,6 @@ img{
   width: 100%;
 }
 
-.nav-item:last-child {
-  margin-top: auto;
-}
-
 .nav-link {
   display: flex;
   align-items: center;
@@ -196,30 +192,10 @@ img{
   }
 }
 
-.dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --main-background: #2c2f33;
-}
-
-.light {
-  --text-primary: #1f1f1f;
-  --text-secondary: #000000;
-  --bg-primary: #ffffff;
-  --bg-secondary: #e4e4e4;
-  --main-background: #ECEBDF;
-}
-
 .theme-icon {
   display: none;
 }
 
 .dark #darkIcon {
-  display: block;
-}
-
-.light #lightIcon {
   display: block;
 }
