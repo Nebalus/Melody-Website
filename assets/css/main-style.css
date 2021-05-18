@@ -16,7 +16,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -25,6 +25,13 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    transition: var(--transition-speed);
 }
 
 .button i{
@@ -38,6 +45,7 @@ body::-webkit-scrollbar-thumb {
 
 .button {
     margin-top: 20px;
+    margin-right: 20px;
     background-color: red;
     border-radius: 3px;
     display: flex;
@@ -52,7 +60,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .selector{
-    display: flex;
     flex-direction: column;
     width: 95.3.2vw;
     height: 100vh;
@@ -61,14 +68,9 @@ body::-webkit-scrollbar-thumb {
 /*-------------------------------------------------*/
 main {
   margin-left: 5rem;
-  
   color: var(--text-primary);
 }
 
-hr{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 .flex { 
     display: flex; 
     justify-content: center; 
@@ -160,7 +162,11 @@ hr{
     width: 100vw;
     height: 5rem;
   }
-
+    
+  #button-container{
+    flex-direction: column;
+  }
+    
   .logo {
     display: none;
   }
@@ -178,14 +184,18 @@ hr{
   }
 }
 
-/* Middle screens
+/* Middle screens*/
 @media only screen and (min-width: 500px) {
  .navbar {
     top: 0;
-    width: 10rem;
+    width: 5rem;
     height: 100vh;
   }
 
+  #button-container{
+    flex-direction: column;
+  }
+    
   .navbar:hover {
     width: 16rem;
   }
@@ -194,17 +204,14 @@ hr{
     display: inline;
   }
 
-  .navbar:hover .logo i
-  {
+  .navbar:hover .logo i{
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
-  {
+  .navbar:hover .logo-text{
     left: 0px;
   }
 }
- */
 /* Large screens */
 @media only screen and (min-width: 700px) {
   .navbar {
@@ -213,6 +220,10 @@ hr{
     height: 100vh;
   }
 
+  #button-container{
+    flex-direction: row;
+  }
+    
   .navbar:hover {
     width: 16rem;
   }
@@ -221,13 +232,11 @@ hr{
     display: inline;
   }
 
-  .navbar:hover .logo i
-  {
+  .navbar:hover .logo i{
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
-  {
+  .navbar:hover .logo-text{
     left: 0px;
   }
 }
