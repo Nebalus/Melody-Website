@@ -9,11 +9,127 @@
   <title>Melody</title>
 </head>
 
+<style>
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --main-background: #2c2f33;
+  --transition-speed: 600ms;
+}
+
+/*-------------------------------------------------*/
+main, footer, header{
+  color: var(--text-secondary);
+  margin-left: 5rem;
+}
+
+body {
+  background-color: var(--main-background);
+  margin: 0;
+  padding: 0;
+}
+    
+.flex { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+/*-------------------------------------------------*/
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    transition: var(--transition-speed);
+}
+
+#discord-button i{
+   margin-top: 15px;
+   margin-left: auto;
+}
+
+#discord-button h3{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.button h3{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+
+.button {
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: red;
+    border-radius: 3px;
+    display: flex;
+    text-align: center;
+}
+
+.selector a{
+    color: var(--text-secondary);
+    text-decoration: none;
+    width: 275px;
+    height: 60px;
+    text-align: center;
+}
+
+.selector{
+    flex-direction: column;
+    width: 95.3.2vw;
+    height: 90vh;
+}
+
+article{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+article p{
+    color: var(--text-primary);
+}
+/* Small screens */
+@media only screen and (max-width: 499px){
+  #button-container{
+    flex-direction: column;
+  }
+  article{
+    text-align: center;
+  }
+}
+
+/* Middle screens*/
+@media only screen and (min-width: 500px) and ( max-width: 699px) {
+  #button-container{
+    flex-direction: column;
+  }
+  article{
+    text-align: center;
+  }    
+}
+/* Large screens */
+@media only screen and (min-width: 700px){
+  #button-container{
+    flex-direction: row;
+    }
+  article{
+    text-align: left;
+  }
+}
+</style>
+
 <body>
   <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
-        <a href="#" class="nav-link">        
+        <a href="#melody" class="nav-link">        
           <span class="link-text logo-text">Melody</span>
           <i class="fas fa-angle-double-right fa-primary font-icon"></i>        
         </a>
@@ -29,7 +145,7 @@
       <li class="nav-item">
         <a href="404.html" class="nav-link">
           <i class="fas fa-terminal fa-primary font-icon"></i>
-          <span class="link-text">Commands</span>
+          <span class="link-text" href="#commands">Commands</span>
         </a>
       </li>
 
@@ -48,23 +164,40 @@
         </li>
     </ul>
   </nav>
-  <main>
-    <div class="selector flex">
+  <span id="melody">
+      <header class="selector flex" style="height: 100vh">
         <h1>Boost your music!</h1>
         <p>🎶 Enhance the way you listen to music</p>
         <div id="button-container">
             <a href="invite.html" class="button" id="discord-button" style="background-color: red"> <i class="fab fa-discord font-icon"></i><h3>Add to discord</h3></a>
-            <a class="button" style="background-color: black"><h3>see features</h3></a>
-       </div>
+            <a class="button" style="background-color: black" href="#commands"><h3>see commands</h3></a>
+        </div>
+      </header>
+    </span>
+  <main>
+    <div class="selector flex" style="background-color: black">
+        <article>
+           <h2>Many people already trust in Melody</h2>
+           <!--Checkted 17:49 19.05.2021-->
+           <p>At the time you look at this page 25</p>
+           <p>people listened for 6days 19hours 36minutes 30seconds to music thru Melody!</p>
+           <p> We thank all of you for your support 💙</p>
+        </article>
     </div>
-       <div class="selector flex">
-       
+    <span id="commands">
+    <div class="selector flex">
+          <h2>Music Commands</h2>
+           <table>
+            <tr>
+            
+            
+            </tr>
+        </table>
     </div>
-       <div class="selector flex">
-       
-    </div>
-       <div class="selector flex">
+    </span>
+       <div class="selector flex" style="background-color: black">
       
     </div>
   </main>
+    <footer></footer>
 </body>
