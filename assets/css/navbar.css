@@ -10,6 +10,11 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
+main{
+  margin-left: 5rem;
+}
+
+
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
@@ -108,7 +113,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
 
-  main {
+  main{
     margin: 0;
   }
 }
