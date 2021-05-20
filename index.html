@@ -38,7 +38,28 @@ body {
     align-items: center;
 }
 /*-------------------------------------------------*/
+    
+hr{
+    display: none;
+    margin-top:auto; 
+    margin-bottom:auto;
+    width: 70%;
+    }
 
+.selector2{
+    min-height: 500px;
+    }
+.selector2 div{
+    display: flex;
+    flex-direction: row; 
+    }
+.selector2 img{
+    margin-left: 40px;
+    margin-right: 50px;
+    max-width: 300px;
+    max-height: 230px;
+    }
+    
 #button-container{
     display: flex;
     flex-direction: row;
@@ -83,6 +104,7 @@ body {
     flex-direction: column;
     width: 95.3.2vw;
     height: 90vh;
+    min-height: 700px;
 }
 
 article{
@@ -102,6 +124,18 @@ article p{
   article{
     text-align: center;
   }
+  hr{
+    display: block;  
+  }
+.selector2 div{
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column; 
+  }
+.selector2 img{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Middle screens*/
@@ -111,6 +145,16 @@ article p{
   }
   article{
     text-align: center;
+  }
+  hr{
+    display: block;  
+  }
+.selector2 div{
+    flex-direction: column; 
+  }
+.selector2 img{
+    margin-left: auto;
+    margin-right: auto;
   }    
 }
 /* Large screens */
@@ -121,6 +165,7 @@ article p{
   article{
     text-align: left;
   }
+    
 }
 </style>
 
@@ -142,7 +187,7 @@ article p{
       </li>
 
       <li class="nav-item">
-        <a href="404.html" class="nav-link">
+        <a href="#commands" class="nav-link">
           <i class="fas fa-terminal fa-primary font-icon"></i>
           <span class="link-text" href="#commands">Commands</span>
         </a>
@@ -174,7 +219,11 @@ article p{
         </div>
       </header>
     </span>
-    <div class="selector flex" style="background-color: black">
+    <div class="selector flex selector2" style="background-color: black">
+        
+        <hr>
+        <div>
+        <img src="assets/images/headphones.gif" alt="Headphones">
         <article>
            <h2>Many people already trust in Melody</h2>
            <!--Checkted 16:34 20.05.2021-->
@@ -182,6 +231,8 @@ article p{
            <p>people listened for 7days 2hours 3minutes 40seconds to music thru Melody!</p>
            <p> We thank all of you for your support 💙</p>
         </article>
+        </div>
+         <hr>
     </div>
     <span id="commands">
     <div class="selector flex">
