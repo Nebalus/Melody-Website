@@ -39,10 +39,6 @@ body {
 }
 /*-------------------------------------------------*/
     
-.melody{
-    height: 100vh;
-    }
-    
 hr{
     display: none;
     margin-top:auto; 
@@ -107,8 +103,8 @@ hr{
 .selector{
     flex-direction: column;
     width: 95.3.2vw;
-    height: 90vh;
-    min-height: 700px;
+    height: 40vh;
+    min-height: 500px;
 }
 
 article{
@@ -120,8 +116,9 @@ article{
 article p{
     color: var(--text-primary);
 }
+    
 /* Small screens */
-@media only screen and (max-width: 499px){
+@media only screen and (max-width: 500px){
   #button-container{
     flex-direction: column;
   }
@@ -139,14 +136,11 @@ article p{
 .selector2 img{
     margin-left: auto;
     margin-right: auto;
-  }
-.melody{
-    height: 100vh-5rem;
   }
 }
 
 /* Middle screens*/
-@media only screen and (min-width: 500px) and ( max-width: 699px) {
+@media only screen and (min-width: 500px) and ( max-width: 700px) {
   #button-container{
     flex-direction: column;
   }
@@ -162,10 +156,7 @@ article p{
 .selector2 img{
     margin-left: auto;
     margin-right: auto;
-  }  
-.melody{
-    height: 100vh-5rem;
-  }
+  }    
 }
 /* Large screens */
 @media only screen and (min-width: 700px){
@@ -220,7 +211,7 @@ article p{
   </nav>
   <main>
     <span id="melody">
-      <header class="selector flex melody">
+      <header class="selector flex" style="height: 100vh">
         <h1>Boost your music!</h1>
         <p>🎶 Enhance the way you listen to music</p>
         <div id="button-container">
@@ -230,7 +221,6 @@ article p{
       </header>
     </span>
     <div class="selector flex selector2" style="background-color: black">
-        
         <hr>
         <div>
         <img src="assets/images/headphones.gif" alt="Headphones">
