@@ -38,6 +38,11 @@ body {
     align-items: center;
 }
 /*-------------------------------------------------*/
+   
+header{
+    display: block; 
+    min-height: 100vh;
+    }
     
 hr{
     display: none;
@@ -103,8 +108,8 @@ hr{
 .selector{
     flex-direction: column;
     width: 95.3.2vw;
-    height: 40vh;
-    min-height: 500px;
+    height: 90vh;
+    display: flex;
 }
 
 article{
@@ -136,6 +141,9 @@ article p{
 .selector2 img{
     margin-left: auto;
     margin-right: auto;
+  }
+  header{
+    padding-top: -5rem
   }
 }
 
@@ -211,7 +219,7 @@ article p{
   </nav>
   <main>
     <span id="melody">
-      <header class="selector flex" style="height: 100vh">
+      <header class="selector flex">
         <h1>Boost your music!</h1>
         <p>🎶 Enhance the way you listen to music</p>
         <div id="button-container">
