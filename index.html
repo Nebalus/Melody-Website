@@ -1,44 +1,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.ico">
-  <link rel="stylesheet" href="assets/css/main-style.css"/>
+  <link rel="stylesheet" href="assets/css/index.css"/>
   <link rel="stylesheet" href="assets/css/font-icon.css"/>
   <link rel="stylesheet" href="assets/css/navbar.css"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/90a8233232.js" crossorigin="anonymous"></script>
-  <title>Melody</title>
+  <title>Melody - MusicBot</title>
 </head>
 
 <style>
-:root {
-  font-size: 16px;
-  font-family: 'Open Sans';
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --main-background: #2c2f33;
-  --transition-speed: 600ms;
-}
-
-/*-------------------------------------------------*/
-main{
-  color: var(--text-secondary);
-}
-
-body {
-  background-color: var(--main-background);
-  margin: 0;
-  padding: 0;
-}
-    
-.flex { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-}
-/*-------------------------------------------------*/
-   
 header{
     display: block; 
     min-height: 100vh;
@@ -89,13 +60,19 @@ hr{
 }
 
 .button {
+    color: var(--text-secondary);
     margin-top: 20px;
     margin-right: 20px;
-    background-color: red;
     border-radius: 3px;
     display: flex;
     text-align: center;
+    transition: var(--transition-speed);
 }
+.button:hover {
+  background-color: burlywood;
+  color: black;
+}
+
 
 .selector a{
     color: var(--text-secondary);
@@ -194,7 +171,7 @@ article p{
       <li class="nav-item">
         <a href="#commands" class="nav-link">
           <i class="fas fa-terminal fa-primary font-icon"></i>
-          <span class="link-text" href="#commands">Commands</span>
+          <span class="link-text" href="commands.html">Commands</span>
         </a>
       </li>
       <li class="nav-item">
@@ -211,8 +188,8 @@ article p{
         <h1>Boost your music!</h1>
         <p>🎶 Enhance the way you listen to music</p>
         <div id="button-container">
-            <a href="invite.html" class="button" id="discord-button" style="background-color: red"> <i class="fab fa-discord font-icon"></i><h3>Add to Discord</h3></a>
-            <a class="button" style="background-color: black" href="#commands"><h3>see commands</h3></a>
+            <a href="invite.html" class="button bg-red" id="discord-button"> <i class="fab fa-discord font-icon"></i><h3>Add to Discord</h3></a>
+            <a class="button bg-black" href="commands.html"><h3>See Commands</h3></a>
         </div>
           <br>
           <br>
