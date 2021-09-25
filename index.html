@@ -2,7 +2,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.ico">
   <link rel="stylesheet" href="assets/css/index.css"/>
-  <link rel="stylesheet" href="assets/css/font-icon.css"/>
   <link rel="stylesheet" href="assets/css/navbar.css"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/90a8233232.js" crossorigin="anonymous"></script>
@@ -19,27 +18,11 @@
     transition: var(--transition-speed);
 }
 
-#discord-button i{
-   margin-top: 15px;
-   margin-left: auto;
-}
-
-#discord-button h3{
-    margin-left: 0px;
-    margin-right: auto;
-}
-
-.button h3{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 18px;
-}
-
 .button {
     color: var(--text-secondary);
     margin-top: 20px;
     margin-right: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: var(--transition-speed);
 }
     
@@ -121,6 +104,7 @@
     </ul>
   </nav>
   <main>
+      
       <header class="selector flex justify-center item-center ">
         <img class="botlogo" src="assets/images/icon.png">
         <h1>Boost your music!</h1>
@@ -128,8 +112,8 @@
           
         <p>⚠️WARNING!!! This bot is still work an progress and may contain bugs⚠️</p>
         <div class="button-container flex">
-            <a href="invite.html" class="button bg-red flex" id="discord-button"> <i class="fab fa-discord font-icon"></i><h3>Add to Discord</h3></a>
-            <a class="button bg-black flex" href="commands.html"><h3>See Commands</h3></a>
+            <a href="invite.html" class="button bg-red flex item-center text-center"> <i class="fab fa-discord font-icon"></i><h3>Add to Discord</h3></a>
+            <a class="button bg-black flex" href="commands.html"><h3 class="margin-center">See Commands</h3></a>
         </div>
           <br>
           <br>
