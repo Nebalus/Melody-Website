@@ -30,8 +30,26 @@ body {
     background-color: black;
 }
 
+.bg-gray {
+    background-color: gray;
+}
+
 .flex { 
     display: flex; 
+}
+
+.justify-center{
     justify-content: center; 
+}
+
+.item-center{
     align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: .5rem;
 }
