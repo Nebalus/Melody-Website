@@ -10,22 +10,38 @@
     <link rel="stylesheet" href="assets/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="">
     <script src="https://kit.fontawesome.com/90a8233232.js" crossorigin="anonymous"></script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c6a4cef6e7f14f58bb4f7b30c09261bf"}'></script>
+    <!-- End Cloudflare Web Analytics -->
     <title>Melody - Commands</title>
    
     <style>
-        .cmdcontent{
-            display: flex;
+        .cmdwrapper{
             flex-direction: column;
             max-width: 1280px;
+            margin-top: 111px;
             padding-left: 1rem;
             padding-right: 1rem;
+        }
+       
+        .cmdcontent{
+            margin-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        main h2{
+            margin-top: 0rem;
+            margin-bottom: 1rem;
         }
     </style>
   </head>
     
   <body>
    <nav class="navbar">
-    <ul class="navbar-nav">
+      <ul class="navbar-nav">
       <li class="logo">
         <a href="index.html" class="nav-link">        
           <span class="link-text logo-text">Melody</span>
@@ -51,12 +67,26 @@
           <span class="link-text">Support</span>
         </a>
         </li>
+	  <li class="nav-item">
+        <a href="https://github.com/Nebalus/Melody" class="nav-link">
+		 <i class="fab fa-github fa-primary font-icon"></i>         
+          <span class="link-text">Github</span>
+        </a>
+        </li>
     </ul>
   </nav>
       <main>
-        <div class="cmdcontent w-full bg-red">
-            
-      </div>
+        <div class="cmdwrapper w-full margin-center flex-col">
+            <div class="cmdcontent w-full bg-dark-gray rounded-lg">
+                <h2>Test1</h2>
+            </div>
+            <div class="cmdcontent w-full bg-dark-gray rounded-lg">
+                <h2>Test2</h2>
+            </div>
+            <div class="cmdcontent w-full bg-dark-gray rounded-lg">
+                <h2>Test3</h2>
+            </div>
+        </div>
     </main>
   </body>
 </html>
