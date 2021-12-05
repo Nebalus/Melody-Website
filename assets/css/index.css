@@ -34,8 +34,12 @@ body {
     background-color: gray;
 }
 
+.bg-darker-gray {
+    background-color: rgba(35,35,35);
+}
+
 .bg-dark-gray {
-    background-color:  rgba(35,35,35);
+    background-color: rgba(62,62,62);
 }
 
 .text-white{
@@ -77,4 +81,8 @@ body {
 
 .rounded-lg {
     border-radius: .5rem;
+}
+
+.opacity-75 {
+    opacity: .75;
 }
