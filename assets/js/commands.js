@@ -5,6 +5,5 @@ window.addEventListener('load', () => {
 	if(prefix == null || prefix == '' || prefix.length > 6){
 		prefix = 'm!';
 	}
-
 	document.getElementById('result-prefix').innerHTML = prefix;
 })
