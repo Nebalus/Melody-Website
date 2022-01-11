@@ -81,6 +81,10 @@ body {
     margin-bottom: .5rem;
 }
 
+.hidden{
+    display: none !important;
+}
+
 .flex-col {
     flex-direction: column;
 }

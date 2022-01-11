@@ -1,7 +1,9 @@
+
+const url = (new URL(document.location));
+
 window.addEventListener('load', () => {
-	const param = (new URL(document.location)).searchParams;
-	var prefix = param.get('p');
-	
+	var prefix = url.searchParams.get('p');
+
 	if(prefix == null || prefix == '' || prefix.length > 6){
 		prefix = 'm!';
 	}
@@ -12,5 +14,45 @@ window.addEventListener('load', () => {
         spans[i].textContent = prefix; 
     } 
     
+    const query = url.searchParams.get('query');
+    
+    if(query != null && query != ''){
+        var content = document.getElementById("search-input");
+        content.value = query;
+        updateCommands(query);
+    }
+    
 	//document.getElementById('result-prefix').innerHTML = prefix;
-})
+});
+
+document.addEventListener('input', updateQuery);
+
+function updateQuery(query){
+    const value = query.target.value;
+    
+    url.searchParams.set("query", value.toString());
+    
+    console.log('Value:', value );
+    
+    window.history.pushState({}, null, url);
+    
+    updateCommands(value);
+}
+
+function updateCommands(query){
+    if(query != null){
+        var spans = document.querySelectorAll("#cmdcontainer");
+        var len = spans.length; 
+
+        for (var i = 0; i < len; i++) { 
+            var keywords = spans[i].getAttribute("keywords").toLowerCase();
+
+            if(keywords != null && keywords.includes(query.toLowerCase())){
+                console.log(keywords);
+                spans[i].classList.remove("hidden");
+            }else{
+                spans[i].classList.add("hidden");
+            }
+        } 
+    }
+}
