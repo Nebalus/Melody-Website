@@ -24,7 +24,7 @@
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c6a4cef6e7f14f58bb4f7b30c09261bf"}'></script>
     <!-- End Cloudflare Web Analytics -->
-    <title>Melody - Commands</title>
+    <script src="assets/js/commands.js"></script>    <title>Melody - Commands</title>
    
     <style>
         .cmdwrapper{
@@ -96,168 +96,168 @@
       <main>
         <div class="cmdwrapper margin-center flex-col">
             <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!join</h2>  
+<h2><span id="result-prefix"></span>join</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Let Melody join your Voicechannel</p>  
 <p class="opacity-75">Aliases: j</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!fastforward</h2>  
+<h2><span id="result-prefix"></span>fastforward</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
   
 <p class="opacity-75">Aliases: fw, f</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!rewind</h2>  
+<h2><span id="result-prefix"></span>rewind</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
   
 <p class="opacity-75">Aliases: rw, r</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!seek</h2>  
+<h2><span id="result-prefix"></span>seek</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Seeks to a specific position in the current song</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!play</h2>  
+<h2><span id="result-prefix"></span>play</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
   
 <p class="opacity-75">Aliases: p</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!volume</h2>  
+<h2><span id="result-prefix"></span>volume</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Lets you change the bots default output volume</p>  
 <p class="opacity-75">Aliases: vol, v</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!pause</h2>  
+<h2><span id="result-prefix"></span>pause</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Pauses the currently playing track</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!resume</h2>  
+<h2><span id="result-prefix"></span>resume</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
   
 <p class="opacity-75">Aliases: unpause</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!stop</h2>  
+<h2><span id="result-prefix"></span>stop</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Stops the player and clears the queue</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!leave</h2>  
+<h2><span id="result-prefix"></span>leave</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Let Melody leave your Voicechannel</p>  
 <p class="opacity-75">Aliases: l</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!trackinfo</h2>  
+<h2><span id="result-prefix"></span>trackinfo</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Shows details of the song currently being played</p>  
 <p class="opacity-75">Aliases: ti, np, nowplaying</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!queue</h2>  
+<h2><span id="result-prefix"></span>queue</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
   
 <p class="opacity-75">Aliases: q</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!next</h2>  
+<h2><span id="result-prefix"></span>next</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Lets you skip the current song</p>  
 <p class="opacity-75">Aliases: n, skip, s</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!info</h2>  
+<h2><span id="result-prefix"></span>info</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Show some information about Melody</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!ping</h2>  
+<h2><span id="result-prefix"></span>ping</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>See the response time of Melody to the Discord Gateway</p>  
 <p class="opacity-75">Aliases: latency</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!config</h2>  
+<h2><span id="result-prefix"></span>config</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
   
 <p class="opacity-75">Aliases: c</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!invite</h2>  
+<h2><span id="result-prefix"></span>invite</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Invite Melody to your own Discord Server</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!shuffle</h2>  
+<h2><span id="result-prefix"></span>shuffle</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Shuffles the queue</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!loop</h2>  
+<h2><span id="result-prefix"></span>loop</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Cycles through all three loop modes (queue, song, off)</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!24/7</h2>  
+<h2><span id="result-prefix"></span>24/7</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Toggles Melody to stay 24/7 in the voice channel</p>  
 <p class="opacity-75">Aliases: 247</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!back</h2>  
+<h2><span id="result-prefix"></span>back</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
   
 <p class="opacity-75">Aliases: b</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!prefix</h2>  
+<h2><span id="result-prefix"></span>prefix</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
-<p>Gets the current prefix from Melody</p>  
+<p>Gets the current prefix</p>  
  
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!cleanup</h2>  
+<h2><span id="result-prefix"></span>cleanup</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Clears command and bot messages</p>  
 <p class="opacity-75">Aliases: clean</p> 
 </div>
 </div>
 <div class="cmd w-full bg-darker-gray rounded-lg"> 
-<h2>m!help</h2>  
+<h2><span id="result-prefix"></span>help</h2>  
 <div class="cmddescription bg-dark-gray rounded-lg">  
 <p>Shows the help menu</p>  
 <p class="opacity-75">Aliases: h</p> 

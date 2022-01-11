@@ -5,5 +5,12 @@ window.addEventListener('load', () => {
 	if(prefix == null || prefix == '' || prefix.length > 6){
 		prefix = 'm!';
 	}
-	document.getElementById('result-prefix').innerHTML = prefix;
+    var spans = document.querySelectorAll("#result-prefix");
+    var len = spans.length; 
+    
+    for (var i = 0; i < len; i++) { 
+        spans[i].textContent = prefix; 
+    } 
+    
+	//document.getElementById('result-prefix').innerHTML = prefix;
 })
