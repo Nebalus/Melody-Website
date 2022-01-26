@@ -2,6 +2,9 @@
 const url = (new URL(document.location));
 
 window.addEventListener('load', () => {
+
+    document.getElementById("search-input").classList.remove("hidden");
+    
 	var prefix = url.searchParams.get('p');
 
 	if(prefix == null || prefix == '' || prefix.length > 6){

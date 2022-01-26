@@ -1,18 +1,7 @@
-body::-webkit-scrollbar {
-  width: 0.4rem;
-}
 
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
-  transition: width 800ms ease;
 }
 
 .navbar-nav {
@@ -93,6 +82,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    transition: none;
   }
   .logo {
     display: none;
@@ -108,8 +98,7 @@ body::-webkit-scrollbar-thumb {
 
   main{
     margin: 0rem;
-    padding-bottom: 10rem;
-    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -119,6 +108,7 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     width: 5rem;
     height: 100vh;
+    transition: width 800ms ease;
   }
 
   main{

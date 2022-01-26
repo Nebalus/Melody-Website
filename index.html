@@ -29,11 +29,6 @@
 
 <style>
 
-header{
-  margin-bottom: auto;
-  margin-top: auto;
-}
-
 .button-container{
     flex-direction: row;
     margin-left: 20px;
@@ -62,17 +57,31 @@ header{
 
 .selector{
     flex-direction: column;
-    width: 95.3.2vw;
-    height: 90vh;
+    width: 100%;
+    height: 100%;
 }
 
 .botlogo{
     margin-bottom: 20px;
-    max-width: 180px;
-    border-radius: 90px;
+    width: 180px;
+    border-radius: 50%;
     border-style: solid;
     border-color: #7289DA;
     box-shadow: 14px 14px 14px #000;  
+}
+
+footer p{
+    position: fixed;
+    bottom: 0;
+    right: 1rem; 
+    background-color: #23232e; 
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+            
+footer a{
+    text-decoration: none;
+    color: aqua;
 }
 
 /* Small screens */
@@ -97,6 +106,9 @@ header{
 </style>
 
 <body>
+  <footer>
+    <p>Made by Nebalus#1665 with ❤️</p>
+  </footer>
   <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
@@ -134,7 +146,7 @@ header{
   </nav>
   <main>
       
-      <header class="selector flex justify-center item-center ">
+      <div class="selector flex justify-center item-center ">
         <img class="botlogo" src="assets/images/icon.png" draggable="false">
         <h1>Boost your music!</h1>
         <p>🎶 Enhance the way you listen to music</p>
@@ -145,7 +157,7 @@ header{
             <a class="button bg-black flex" href="commands.html"><h3 class="margin-center">See Commands</h3></a>
         </div>
          
-      </header>
+      </div>
     </main>
 </body>
 </html>
