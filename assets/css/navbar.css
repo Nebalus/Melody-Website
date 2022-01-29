@@ -47,7 +47,7 @@
   transition: var(--transition-speed);
 }
 
-.logo {
+.nav-logo {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -59,20 +59,20 @@
   width: 100%;
 }
 
-.logo i {
+.nav-logo i {
   font-size: 3rem;
   transform: rotate(0deg);
   transition: var(--transition-speed);
 }
 
-.logo-text{
+.nav-logo-text{
   display: inline;
   position: absolute;
   left: -999px;
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo i {
+.navbar:hover .nav-logo i {
   transform: rotate(-180deg);
 }
 
@@ -84,7 +84,7 @@
     height: 5rem;
     transition: none;
   }
-  .logo {
+  .nav-logo {
     display: none;
   }
 
@@ -123,11 +123,11 @@
     display: inline;
   }
 
-  .navbar:hover .logo i{
+  .navbar:hover .nav-logo i{
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text{
+  .navbar:hover .nav-logo-text{
     left: 0px;
   }
 }
