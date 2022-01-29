@@ -7,7 +7,7 @@
   <meta name="application-name" content="Melody Bot">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="author" content="Nebalus">
-  <meta property="og:description" content="An OpenSource Musicbot for the chat plattform Discord">  
+  <meta property="og:description" content="A playlist from Melody. Use this link to start the Melody Player with the playlist.">  
   <meta name="theme-color" content="#2EB8BF">
   <meta property="og:image" content="https://melodybot.ga/assets/images/icon.png">
   <meta name="og:image:height" property="og:image:height" content="300">
@@ -28,6 +28,16 @@
 </head>
 
 <style>
+.selector{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+    
+.selector h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+}
 
 </style>
 
@@ -68,7 +78,10 @@
     </ul>
   </nav>
   <main>
-    
+    <div class="selector flex justify-center item-center">
+        <h1>🛠</h1>
+        <h2>Currently the API to get the Playlist content is work and progress...</h2>    
+      </div>
     </main>
 </body>
 </html>
