@@ -7,19 +7,22 @@ window.addEventListener('load', () => {
     
 	var prefix = url.searchParams.get('p');
 
-	if(prefix == null || prefix == '' || prefix.length > 6){
-		prefix = 'm!';
+	if(prefix == null || prefix == '' || prefix.length > 6)
+	{
+		prefix = '/';
 	}
     var spans = document.querySelectorAll("#result-prefix");
     var len = spans.length; 
     
-    for (var i = 0; i < len; i++) { 
+    for (var i = 0; i < len; i++) 
+    { 
         spans[i].textContent = prefix; 
     } 
     
     const query = url.searchParams.get('query');
     
-    if(query != null && query != ''){
+    if(query != null && query != '')
+    {
         var content = document.getElementById("search-input");
         content.value = query;
         updateCommands(query);
@@ -30,7 +33,8 @@ window.addEventListener('load', () => {
 
 document.addEventListener('input', updateQuery);
 
-function updateQuery(query){
+function updateQuery(query)
+{
     const value = query.target.value;
     
     url.searchParams.set("query", value.toString());
@@ -42,12 +46,15 @@ function updateQuery(query){
     updateCommands(value);
 }
 
-function updateCommands(query){
-    if(query != null){
+function updateCommands(query)
+{
+    if(query != null)
+    {
         var spans = document.querySelectorAll("#cmdcontainer");
         var len = spans.length; 
 
-        for (var i = 0; i < len; i++) { 
+        for (var i = 0; i < len; i++)
+	{ 
             var keywords = spans[i].getAttribute("keywords").toLowerCase();
 
             if(keywords != null && keywords.includes(query.toLowerCase())){
